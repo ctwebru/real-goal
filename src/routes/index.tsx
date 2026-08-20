@@ -297,7 +297,7 @@ function Intro({
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
-      <div className="mx-auto -mt-20 max-w-2xl px-4 pb-20 sm:px-6">
+      <div className="relative z-10 mx-auto -mt-16 max-w-2xl px-4 pb-20 sm:px-6">
         <div className="surface-card p-6 sm:p-8">
           <div className="flex items-center gap-4">
             <img
