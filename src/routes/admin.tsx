@@ -267,8 +267,9 @@ function Row({ label, value, danger }: { label: string; value: string; danger?: 
 }
 
 function ResidentCard({ resident }: { resident: Resident }) {
-  const first = resident.trend[0].csat;
-  const last = resident.trend[resident.trend.length - 1].csat;
+  const first = resident.trend[0]?.csat ?? 0;
+  const last = resident.trend[resident.trend.length - 1]?.csat ?? 0;
+
   const diff = last - first;
 
   return (
